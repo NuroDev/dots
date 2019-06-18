@@ -1,6 +1,6 @@
 <div align='center'>
   <a href='https://setup.nuro.sh/'>
-    <img width="100%" alt='Install' src='./this_is_fine.gif' />
+    <img width="100%" alt='Install' src='./assets/this_is_fine.gif' />
   </a>
 </div>
 
