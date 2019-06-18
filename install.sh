@@ -4,6 +4,7 @@
 brews=(
   bat
   docker
+  docker-compose
   ffsend
   gifski
   git
