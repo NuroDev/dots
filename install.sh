@@ -23,6 +23,7 @@ brews=(
 # Brew Cask Apps
 casks=(
   discord
+  figma
   gitkraken
   google-chrome
   iterm2
