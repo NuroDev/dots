@@ -25,6 +25,7 @@ casks=(
   gitkraken
   google-chrome
   iterm2
+  notion
   qlcolorcode
   qlstephen
   qlmarkdown
