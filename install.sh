@@ -4,6 +4,7 @@
 brews=(
   bat
   ffsend
+  gifski
   git
   gotop
   hexyl
