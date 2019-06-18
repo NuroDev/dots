@@ -368,7 +368,7 @@ echo "
 ╚══════════════════════════════════════════════╝
 "
 wget https://gist.githubusercontent.com/NuroDev/fa3dcac6837276c60eece052a3b91980/raw/51abbeeb5fba8f46c83374672f256c2282f2734e/profile.json -O ~/Desktop/profile.json
-wget https://gist.githubusercontent.com/NuroDev/fa3dcac6837276c60eece052a3b91980/raw/965f23a16d26ae71930ce0d4abb2f729f870154e/nuro.itermcolors -O ~/Desktop/nuro.itermcolors
+wget https://gist.githubusercontent.com/NuroDev/fa3dcac6837276c60eece052a3b91980/raw/965f23a16d26ae71930ce0d4abb2f729f870154e/colors.itermcolors -O ~/Desktop/colors.itermcolors
 wget https://github.com/jasonlong/iterm2-icons/blob/master/iTerm2-dark-mode.icns?raw=true -O ~/Desktop/iTerm2-dark-mode.icns
 
 echo "
