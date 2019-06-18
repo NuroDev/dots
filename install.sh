@@ -359,22 +359,15 @@ npm i -g dark-mode-cli
 dark-mode on
 npm rm -g dark-mode-cli
 
-# Download iTerm profile
+# Download iTerm assets
 echo "
 ╔══════════════════════════════════════════════╗
-║   Downloading iTerm Profile 🙋🏻‍♂️              ║
+║   Downloading iTerm Assets 🌈                ║
 ╚══════════════════════════════════════════════╝
 "
 wget https://gist.githubusercontent.com/NuroDev/fa3dcac6837276c60eece052a3b91980/raw/51abbeeb5fba8f46c83374672f256c2282f2734e/profile.json -O ~/Desktop/profile.json
-
-# Download iTerm profile
-echo "
-╔══════════════════════════════════════════════╗
-║   Downloading iTerm Colors 🌈                ║
-╚══════════════════════════════════════════════╝
-"
 wget https://gist.githubusercontent.com/NuroDev/fa3dcac6837276c60eece052a3b91980/raw/965f23a16d26ae71930ce0d4abb2f729f870154e/nuro.itermcolors -O ~/Desktop/nuro.itermcolors
-open ~/Desktop/nuro.itermcolors
+wget https://github.com/jasonlong/iterm2-icons/blob/master/iTerm2-dark-mode.icns?raw=true -O ~/Desktop/iTerm2-dark-mode.icns
 
 echo "
 ╔══════════════════════════════════════════════╗
