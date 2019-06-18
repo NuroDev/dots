@@ -3,6 +3,7 @@
 # Brew Packages
 brews=(
   bat
+  docker
   ffsend
   gifski
   git
