@@ -112,7 +112,6 @@ vscode=(
 
 # System fonts
 fonts=(
-  font-dosis
   font-fira-code
   font-montserrat
   font-open-sans
@@ -120,6 +119,7 @@ fonts=(
   font-raleway
   font-roboto
   font-roboto-condensed
+  font-sanfrancisco
   font-quicksand
 )
 
@@ -182,6 +182,7 @@ brew tap caskroom/drivers
 brew tap caskroom/versions 
 brew tap caskroom/fonts
 brew tap cjbassi/gotop
+brew tap gerrit/homebrew-fonts-sanfrancisco
 
 # Cleanup
 brew doctor
