@@ -29,6 +29,7 @@ casks=(
   gitkraken
   google-chrome
   iterm2
+  now
   notion
   qlcolorcode
   qlstephen
@@ -60,7 +61,6 @@ npms=(
   is-reachable-cli
   is-up-cli
   lock-cli
-  now
   npm
   prettier
   public-ip-cli
