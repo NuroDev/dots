@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
+# Initialize starship prompt
+eval "$(starship init zsh)"
+
 # Set Shell Theme
 ZSH_THEME="spaceship"
 
@@ -41,9 +44,8 @@ alias minify='tr -d "\n\r"'
 alias mkv-to-mp4='for f in *.mkv; do ffmpeg -i "$f" -c copy "${f%.mkv}.mp4"; done'
 alias neolol='clear && neofetch | lolcat'
 alias send='ffsend'
+alias prune_ds_store='find . -name ".DS_Store" -depth -exec rm {} \;'
+alias alpine='docker run --name alpine -it alpine /bin/sh && docker stop alpine && docker rm alpine'
+alias ubuntu='docker run --name ubuntu -it ubuntu /bin/bash && docker stop ubuntu && docker rm ubuntu'
 
 source $ZSH/oh-my-zsh.sh
-
-# Set Spaceship ZSH as a prompt
-autoload -U promptinit; promptinit
-prompt spaceship

@@ -14,6 +14,7 @@ brews=(
   node
   rustup-init
   ssh-copy-id
+  starship
   tree
   wget
   zsh
@@ -65,7 +66,6 @@ npms=(
   prettier
   public-ip-cli
   serve
-  spaceship-prompt
   speed-test
   yarn
 )
