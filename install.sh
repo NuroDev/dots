@@ -368,9 +368,9 @@ echo "
 ║   Downloading iTerm Assets 🌈                ║
 ╚══════════════════════════════════════════════╝
 "
-wget https://gist.githubusercontent.com/NuroDev/fa3dcac6837276c60eece052a3b91980/raw/51abbeeb5fba8f46c83374672f256c2282f2734e/profile.json -O ~/Desktop/profile.json
-wget https://gist.githubusercontent.com/NuroDev/fa3dcac6837276c60eece052a3b91980/raw/965f23a16d26ae71930ce0d4abb2f729f870154e/colors.itermcolors -O ~/Desktop/colors.itermcolors
-wget https://github.com/jasonlong/iterm2-icons/blob/master/iTerm2-dark-mode.icns?raw=true -O ~/Desktop/iTerm2-dark-mode.icns
+wget https://github.com/NuroDev/dots/blob/master/iterm/colors.itermcolors -i ~/Desktop/colors.itermcolors
+wget https://github.com/NuroDev/dots/blob/master/iterm/profile.json -i ~/Desktop/profile.json
+wget https://github.com/NuroDev/dots/blob/master/iterm/icon.icns?raw=true -i ~/Desktop/iTerm-icon.icns
 
 echo "
 ╔══════════════════════════════════════════════╗
