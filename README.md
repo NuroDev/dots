@@ -5,5 +5,5 @@
 </div>
 
 ```shell
-curl -sSL https://setup.nuro.sh | sh
+curl -sSL https://dots.nuro.sh | sh
 ```
