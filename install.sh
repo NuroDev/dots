@@ -78,7 +78,7 @@ crates=(
 )
 
 # Rust toolchain
-rust_toolchain=nightly
+rust_default_toolchain=nightly
 
 # Rustup components
 rustup_components=(
@@ -230,8 +230,8 @@ echo "
 "
 rustup self update
 rustup update
-rustup install ${rust_toolchain}
-rustup default ${rust_toolchain}
+rustup install ${rust_default_toolchain}
+rustup default ${rust_default_toolchain}
 
 # Installing all packages/services/apps
 echo "
