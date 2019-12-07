@@ -222,17 +222,6 @@ else
   ssh-keygen # Generate ssh key
 fi
 
-# Configure Rustup
-echo "
-╔══════════════════════════════════════════════╗
-║   Configuring Rust 🦀                        ║
-╚══════════════════════════════════════════════╝
-"
-rustup self update
-rustup update
-rustup install ${rust_default_toolchain}
-rustup default ${rust_default_toolchain}
-
 # Installing all packages/services/apps
 echo "
 ╔══════════════════════════════════════════════╗
@@ -298,6 +287,17 @@ echo "
 ╚══════════════════════════════════════════════╝
 "
 install 'npm install --global' ${npms[@]}
+
+# Configure Rustup
+echo "
+╔══════════════════════════════════════════════╗
+║   Configuring Rust 🦀                        ║
+╚══════════════════════════════════════════════╝
+"
+rustup self update
+rustup update
+rustup install ${rust_default_toolchain}
+rustup default ${rust_default_toolchain}
 
 # Install Cargo crates
 echo "
