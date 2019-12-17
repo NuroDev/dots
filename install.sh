@@ -362,6 +362,14 @@ npm i -g dark-mode-cli
 dark-mode on
 npm rm -g dark-mode-cli
 
+# Copy config files
+echo "
+╔══════════════════════════════════════════════╗
+║   Copying Config Files 🛠                    ║
+╚══════════════════════════════════════════════╝
+"
+wget https://github.com/NuroDev/dots/blob/master/.confog/sampler.yml -i ~/.config/sampler.yml
+
 # Download iTerm assets
 echo "
 ╔══════════════════════════════════════════════╗
