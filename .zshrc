@@ -14,6 +14,9 @@ autoload -U compinit && compinit
 # SSH Path
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+# LibFFI fix
+export PKG_CONFIG_PATH='/usr/local/opt/libffi/lib/pkgconfig'
+
 # Plugins
 plugins=(
     brew 
