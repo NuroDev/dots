@@ -40,17 +40,21 @@ plugins=(
 )
 
 # Alias'
+alias alpine='docker run --name alpine -it alpine /bin/sh && docker stop alpine && docker rm alpine'
+alias c=cargo
+alias cargo-sort='cargo-sort-ck ./Cargo.toml -w'
 alias clock='tock -c -s -C 15'
-alias dkps="docker ps"
-alias dkst="docker stats"
-alias dkpsa="docker ps -a"
 alias dkimgs="docker images"
+alias dkps="docker ps"
+alias dkpsa="docker ps -a"
+alias dkst="docker stats"
 alias minify='tr -d "\n\r"'
 alias mkv-to-mp4='for f in *.mkv; do ffmpeg -i "$f" -c copy "${f%.mkv}.mp4"; done'
+alias n=node
 alias neolol='clear && neofetch | lolcat'
-alias send='ffsend'
 alias prune_ds_store='find . -name ".DS_Store" -depth -exec rm {} \;'
-alias alpine='docker run --name alpine -it alpine /bin/sh && docker stop alpine && docker rm alpine'
+alias send='ffsend'
+alias stats='sampler -c ~/.config/sampler.yml'
 alias ubuntu='docker run --name ubuntu -it ubuntu /bin/bash && docker stop ubuntu && docker rm ubuntu'
 
 source $ZSH/oh-my-zsh.sh
