@@ -19,21 +19,23 @@ export PKG_CONFIG_PATH='/usr/local/opt/libffi/lib/pkgconfig'
 
 # Plugins
 plugins=(
-    brew 
-    copyfile 
-    docker 
-    docker-compose 
-    extract 
-    git 
-    last-working-dir 
-    npm 
-    osx 
-    rust 
-    vscode 
-    web-search 
-    yarn 
-    zsh-autosuggestions 
-    zsh-completions 
+    brew
+    cargo
+    copyfile
+    docker
+    docker-compose
+    emoji
+    extract
+    git
+    last-working-dir
+    npm
+    osx
+    rust
+    vscode
+    web-search
+    yarn
+    zsh-autosuggestions
+    zsh-completions
     zsh-syntax-highlighting
 )
 
