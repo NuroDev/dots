@@ -40,6 +40,8 @@ plugins=(
 )
 
 # Alias'
+alias ..='cd ..'
+alias ...='cd ../..'
 alias alpine='docker run --name alpine -it alpine /bin/sh && docker stop alpine && docker rm alpine'
 alias c=cargo
 alias cargo-sort='cargo-sort-ck ./Cargo.toml -w'
@@ -53,6 +55,7 @@ alias mkv-to-mp4='for f in *.mkv; do ffmpeg -i "$f" -c copy "${f%.mkv}.mp4"; don
 alias n=node
 alias neolol='clear && neofetch | lolcat'
 alias prune_ds_store='find . -name ".DS_Store" -depth -exec rm {} \;'
+alias reload="exec ${SHELL} -l"
 alias send='ffsend'
 alias stats='sampler -c ~/.config/sampler.yml'
 alias ubuntu='docker run --name ubuntu -it ubuntu /bin/bash && docker stop ubuntu && docker rm ubuntu'
