@@ -72,6 +72,7 @@ npms=(
 
 # Cargo crates
 crates=(
+  cargo-edit
   rustfmt
   tock
   wasm-pack
