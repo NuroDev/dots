@@ -1,0 +1,21 @@
+[user]
+	name = N U R O ™
+[github]
+  	user = nurodev
+[alias]
+	br = branch
+	ci = commit
+	co = checkout
+	cut = checkout -b
+	ls = ls-files
+	st = status
+[color]
+	ui = auto
+[core]
+	excludesfile = ~/.gitignore
+	editor = nano
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
