@@ -69,7 +69,8 @@ echo "
 ║   Installing Packages ✨                     ║
 ╚══════════════════════════════════════════════╝
 "
-packages = (
+
+packages=(
   brew
   cargo
   editor
