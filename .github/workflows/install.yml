@@ -11,4 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install
-        run: ./install.sh
+        run: |
+          chmod +x ./install.sh
+          ./install.sh
