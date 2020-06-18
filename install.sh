@@ -25,27 +25,27 @@ echo "
 
 # Install Homebrew
 if test ! $(which brew); then
-  echo "
-  ╔══════════════════════════════════════════════╗
-  ║   Installing Xcode 🔨                        ║
-  ╚══════════════════════════════════════════════╝
-  "
-  xcode-select --install
+echo "
+╔══════════════════════════════════════════════╗
+║   Installing Xcode 🔨                        ║
+╚══════════════════════════════════════════════╝
+"
+xcode-select --install
 
-  echo "
-  ╔══════════════════════════════════════════════╗
-  ║   Installing Homebrew 🍺                     ║
-  ╚══════════════════════════════════════════════╝
-  "
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+echo "
+╔══════════════════════════════════════════════╗
+║   Installing Homebrew 🍺                     ║
+╚══════════════════════════════════════════════╝
+"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
-  echo "
-  ╔══════════════════════════════════════════════╗
-  ║   Updating Homebrew ⬆️                        ║
-  ╚══════════════════════════════════════════════╝
-  "
-  brew update
-  brew upgrade
+echo "
+╔══════════════════════════════════════════════╗
+║   Updating Homebrew ⬆️                        ║
+╚══════════════════════════════════════════════╝
+"
+brew update
+brew upgrade
 fi
 
 function install {
@@ -69,7 +69,6 @@ echo "
 ║   Installing Packages ✨                     ║
 ╚══════════════════════════════════════════════╝
 "
-
 curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/brew.sh | sh
 curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/cargo.sh | sh
 curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/editor.sh | sh
@@ -105,12 +104,17 @@ echo "
 ║   Login 🔒                                   ║
 ║    - 1Password                               ║
 ║    - Microsoft Edge                          ║
-║    - Spark (Email)                           ║
+║    - Spark                                   ║
 ║    - Spotify                                 ║
+║    - Slack                                   ║
 ║    - Discord                                 ║
-║    - Notion                                  ║
+║    - Telegram                                ║
+║    - Sketch                                  ║
 ║    - Figma                                   ║
-║    - GitHub (SSH)                            ║
+║    - Notion                                  ║
+║    - Ledger Live                             ║
+║    - Linear                                  ║
+║    - GitHub                                  ║
 ║    - GitKraken                               ║
 ║    - Zeit Now                                ║
 ║    - GOG Galaxy                              ║
@@ -122,12 +126,13 @@ echo "
 ╔══════════════════════════════════════════════╗
 ║                                              ║
 ║   Configure 🔨                               ║
+║    - Microsoft Edge                          ║
 ║    - iTerm2                                  ║
 ║    - Visual Studio Code                      ║
-║    - iTerm2                                  ║
-║    - iTerm2                                  ║
-║    - iTerm2                                  ║
-║    - iTerm2                                  ║
+║    - Gitkraken                               ║
+║    - Docker                                  ║
+║    - Viscocity                               ║
+║    - Dato                                    ║
 ║                                              ║
 ╚══════════════════════════════════════════════╝
 "
