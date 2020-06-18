@@ -2,6 +2,7 @@
 
 export npms=(
   @vue/cli
+  boxen-cli
   fast-cli
   is-online-cli 
   is-reachable-cli

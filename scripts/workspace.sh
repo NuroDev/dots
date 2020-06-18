@@ -31,6 +31,8 @@ fi
 
 rm -rf ~/.zshrc
 wget https://raw.githubusercontent.com/NuroDev/dots/master/.zshrc -O ~/.zshrc
+wget https://raw.githubusercontent.com/NuroDev/dots/master/.aliases.sh -O ~/.aliases
+wget https://raw.githubusercontent.com/NuroDev/dots/master/.functions.sh -O ~/.functions
 
 echo "
 ╔══════════════════════════════════════════════╗
@@ -52,6 +54,9 @@ echo "
 ║   Configuring macOS 🍎                       ║
 ╚══════════════════════════════════════════════╝
 "
+
+# Hide the "Last logun' terminal prompt prefix
+touch ~/.hushlogin
 
 # Allow quitting via ⌘ + Q of Finder
 defaults write com.apple.finder QuitMenuItem -bool true

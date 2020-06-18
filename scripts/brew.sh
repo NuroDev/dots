@@ -2,6 +2,7 @@
 
 export formulas=(
   bat
+  cmake
   deno
   docker-compose
   fd
@@ -9,10 +10,12 @@ export formulas=(
   ffsend
   gifski
   git
-  gotop
   hexyl
+  imagemagick
+  m-cli
   mas
   node
+  premake
   rustup-init
   ssh-copy-id
   starship
@@ -27,13 +30,17 @@ export formulas=(
 )
 
 export casks=(
+  apple-events
   brooklyn
   discord
   docker
   figma
   gitkraken
-  google-chrome
+  gog-galaxy
   iterm2
+  ledger-live
+  linear-linear
+  microsoft-edge
   notion
   now
   qlcolorcode
@@ -46,7 +53,7 @@ export casks=(
   spotify
   viscosity
   visual-studio-code
-  webtorrent
+  wwdc
 )
 
 echo "

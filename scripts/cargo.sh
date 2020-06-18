@@ -6,7 +6,6 @@ export crates=(
   cargo-edit
   rustfmt
   tock
-  wasm-pack
 )
 
 export rustup_components=(

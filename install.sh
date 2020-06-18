@@ -69,12 +69,15 @@ echo "
 ║   Installing Packages ✨                     ║
 ╚══════════════════════════════════════════════╝
 "
-curl -sSL https://raw.githubusercontent.com/NuroDev/dots/master/scripts/brew.sh | sh
-curl -sSL https://raw.githubusercontent.com/NuroDev/dots/master/scripts/cargo.sh | sh
-curl -sSL https://raw.githubusercontent.com/NuroDev/dots/master/scripts/editor.sh | sh
-curl -sSL https://raw.githubusercontent.com/NuroDev/dots/master/scripts/fonts.sh | sh
-curl -sSL https://raw.githubusercontent.com/NuroDev/dots/master/scripts/mas.sh | sh
-curl -sSL https://raw.githubusercontent.com/NuroDev/dots/master/scripts/npm.sh | sh
+packages = (
+  brew
+  cargo
+  editor
+  fonts
+  mas
+  npm
+)
+curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/${packages[@]}.sh | sh
 
 echo "
 ╔══════════════════════════════════════════════╗
@@ -94,26 +97,39 @@ npm prune -g
 
 echo "
 ╔══════════════════════════════════════════════╗
-║   Done ✅                                    ║
+║                   Done ✅                    ║
 ╚══════════════════════════════════════════════╝
 "
 
 echo "
 ╔══════════════════════════════════════════════╗
 ║                                              ║
-║   Manual Steps ✅                            ║
+║   Login 🔒                                   ║
+║    - 1Password                               ║
+║    - Microsoft Edge                          ║
+║    - Spark (Email)                           ║
+║    - Spotify                                 ║
+║    - Discord                                 ║
+║    - Notion                                  ║
+║    - Figma                                   ║
+║    - GitHub (SSH)                            ║
+║    - GitKraken                               ║
+║    - Zeit Now                                ║
+║    - GOG Galaxy                              ║
 ║                                              ║
-║   1)  Login: 1Password                       ║
-║   2)  Login: Google Chrome                   ║
-║   3)  Login: Spark (Email)                   ║
-║   4)  Login: Spotify                         ║
-║   5)  Login: Discord                         ║
-║   6)  Login: Notion                          ║
-║   7)  Login: Figma                           ║
-║   8)  Login: GitHub (SSH)                    ║
-║   8)  Login: GitKraken                       ║
-║   9)  Login: Zeit Now                        ║
-║   10) Login: Figma                           ║
+╚══════════════════════════════════════════════╝
+"
+
+echo "
+╔══════════════════════════════════════════════╗
+║                                              ║
+║   Configure 🔨                               ║
+║    - iTerm2                                  ║
+║    - Visual Studio Code                      ║
+║    - iTerm2                                  ║
+║    - iTerm2                                  ║
+║    - iTerm2                                  ║
+║    - iTerm2                                  ║
 ║                                              ║
 ╚══════════════════════════════════════════════╝
 "
