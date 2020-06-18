@@ -70,15 +70,12 @@ echo "
 ╚══════════════════════════════════════════════╝
 "
 
-packages=(
-  brew
-  cargo
-  editor
-  fonts
-  mas
-  npm
-)
-curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/${packages[@]}.sh | sh
+curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/brew.sh | sh
+curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/cargo.sh | sh
+curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/editor.sh | sh
+curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/fonts.sh | sh
+curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/mas.sh | sh
+curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/npm.sh | sh
 
 echo "
 ╔══════════════════════════════════════════════╗
