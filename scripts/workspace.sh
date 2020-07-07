@@ -30,9 +30,9 @@ if test ! $(which zsh); then
 fi
 
 rm -rf ~/.zshrc
-wget https://raw.githubusercontent.com/NuroDev/dots/master/.zshrc -O ~/.zshrc
-wget https://raw.githubusercontent.com/NuroDev/dots/master/.aliases.sh -O ~/.aliases
-wget https://raw.githubusercontent.com/NuroDev/dots/master/.functions.sh -O ~/.functions
+wget https://raw.githubusercontent.com/nurodev/dots/master/.zshrc -O ~/.zshrc
+wget https://raw.githubusercontent.com/nurodev/dots/master/.aliases -O ~/.aliases
+wget https://raw.githubusercontent.com/nurodev/dots/master/.functions -O ~/.functions
 
 echo "
 ╔══════════════════════════════════════════════╗
