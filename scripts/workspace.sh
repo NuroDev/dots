@@ -164,3 +164,13 @@ echo "
 "
 wget https://github.com/nurodev/dots/blob/master/assets/icons/iTerm2.icns?raw=true -i ~/Pictures/icons/iTerm.icns
 wget https://github.com/nurodev/dots/blob/master/assets/icons/notion.icns?raw=true -i ~/Pictures/icons/Notion.icns
+
+echo "
+╔══════════════════════════════════════════════╗
+║   Downloading Screensavers 🖼                ║
+╚══════════════════════════════════════════════╝
+"
+wget https://github.com/nurodev/dots/blob/master/assets/screensavers/Aerial.saver?raw=true -i ~/Pictures/screensavers/Aerial.saver
+open ~/Pictures/screensavers/Aerial.saver
+wget https://github.com/nurodev/dots/blob/master/assets/screensavers/Brooklyn.saver?raw=true -i ~/Pictures/screensavers/Brooklyn.saver
+open ~/Pictures/screensavers/Brooklyn.saver
