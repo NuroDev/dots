@@ -153,7 +153,14 @@ echo "
 ╔══════════════════════════════════════════════╗
 ║   Configuring iTerm 🌈                       ║
 ╚══════════════════════════════════════════════╝
+"🖼
+wget https://github.com/nurodev/dots/blob/master/.iterm/colors.itermcolors -i ~/Desktop/colors.itermcolors
+wget https://github.com/nurodev/dots/blob/master/.iterm/profile.json -i ~/Desktop/profile.json
+
+echo "
+╔══════════════════════════════════════════════╗
+║   Downloading icons 💎                       ║
+╚══════════════════════════════════════════════╝
 "
-wget https://github.com/NuroDev/dots/blob/master/iterm/colors.itermcolors -i ~/Desktop/colors.itermcolors
-wget https://github.com/NuroDev/dots/blob/master/iterm/profile.json -i ~/Desktop/profile.json
-wget https://github.com/NuroDev/dots/blob/master/iterm/icon.icns?raw=true -i ~/Desktop/iTerm-icon.icns
+wget https://github.com/nurodev/dots/blob/master/assets/icons/iTerm2.icns?raw=true -i ~/Pictures/icons/iTerm.icns
+wget https://github.com/nurodev/dots/blob/master/assets/icons/notion.icns?raw=true -i ~/Pictures/icons/Notion.icns
