@@ -40,14 +40,14 @@ echo "
 ╚══════════════════════════════════════════════╝
 "
 rm -rf ~/.gitconfig
-wget https://raw.githubusercontent.com/NuroDev/dots/master/.gitconfig -O ~/.gitconfig
+wget https://raw.githubusercontent.com/nurodev/dots/master/.gitconfig -O ~/.gitconfig
 
 echo "
 ╔══════════════════════════════════════════════╗
 ║   Configuring Editor 🔧                      ║
 ╚══════════════════════════════════════════════╝
 "
-wget https://raw.githubusercontent.com/NuroDev/dots/master/.vscode/settings.json -O $HOME/Library/Application Support/Code/User/settings.json
+wget https://raw.githubusercontent.com/nurodev/dots/master/.vscode/settings.json -O $HOME/Library/Application Support/Code/User/settings.json
 
 echo "
 ╔══════════════════════════════════════════════╗
@@ -55,7 +55,7 @@ echo "
 ╚══════════════════════════════════════════════╝
 "
 
-# Hide the "Last logun' terminal prompt prefix
+# Hide the "Last login' terminal prompt prefix
 touch ~/.hushlogin
 
 # Allow quitting via ⌘ + Q of Finder

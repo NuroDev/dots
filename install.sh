@@ -81,7 +81,7 @@ echo "
 ║   Configuring workspace 🖥️                    ║
 ╚══════════════════════════════════════════════╝
 "
-curl -sSL https://raw.githubusercontent.com/NuroDev/dots/master/scripts/workspace.sh | sh
+curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/workspace.sh | sh
 
 echo "
 ╔══════════════════════════════════════════════╗
