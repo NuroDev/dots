@@ -79,7 +79,9 @@ wget https://raw.githubusercontent.com/nurodev/dots/wsl/.functions -O ~/.functio
 curl -fsSL https://starship.rs/install.sh | bash
 
 # Install ZSH `spaceship` theme
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+# TODO: Kinda hacky fix but it works. Need to switch to ZSH straight after it's installed to get access to $ZSH_CUSTOM env
+$ZSH_CUSTOM = "~/.oh-my-zsh/custom/"
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" 
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 # Install ZSH plugins (`zsh-autosuggestions`, `zsh-completions`, `zsh-syntax-highlighting`)
