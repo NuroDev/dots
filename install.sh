@@ -69,19 +69,19 @@ echo "
 ║   Installing Packages ✨                     ║
 ╚══════════════════════════════════════════════╝
 "
-curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/brew.sh | sh
-curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/cargo.sh | sh
-curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/editor.sh | sh
-curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/fonts.sh | sh
-curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/mas.sh | sh
-curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/npm.sh | sh
+curl -sSL https://raw.githubusercontent.com/nurodev/dots/macos/scripts/brew.sh | sh
+curl -sSL https://raw.githubusercontent.com/nurodev/dots/macos/scripts/cargo.sh | sh
+curl -sSL https://raw.githubusercontent.com/nurodev/dots/macos/scripts/editor.sh | sh
+curl -sSL https://raw.githubusercontent.com/nurodev/dots/macos/scripts/fonts.sh | sh
+curl -sSL https://raw.githubusercontent.com/nurodev/dots/macos/scripts/mas.sh | sh
+curl -sSL https://raw.githubusercontent.com/nurodev/dots/macos/scripts/npm.sh | sh
 
 echo "
 ╔══════════════════════════════════════════════╗
 ║   Configuring workspace 🖥️                    ║
 ╚══════════════════════════════════════════════╝
 "
-curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/workspace.sh | sh
+curl -sSL https://raw.githubusercontent.com/nurodev/dots/macos/scripts/workspace.sh | sh
 
 echo "
 ╔══════════════════════════════════════════════╗
