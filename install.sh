@@ -29,7 +29,7 @@ echo "
 ║   Upgrade ⬆️                                 ║
 ╚══════════════════════════════════════════════╝
 "
-sudo apt-get upgrade
+sudo apt-get upgrade -y
 sudo apt-get update -y
 
 echo "
