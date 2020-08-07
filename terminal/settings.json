@@ -1,0 +1,84 @@
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+    "profiles": {
+        "defaults": {
+            "acrylicOpacity" : 0.0,
+            "closeOnExit" : true,
+            "colorScheme" : "OneDark",
+            "cursorColor" : "#FFFFFF",
+            "cursorShape" : "filledBox",
+            "fontSize": 10,
+            "guid" : "{2c4de342-38b7-51cf-b940-2309a097f518}",
+            "padding" : "0, 0, 0, 0",
+            "snapOnInput" : true,
+            "useAcrylic" : true
+        },
+        "list": [
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "cmd",
+                "commandline": "cmd.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "//wsl$/Ubuntu/home/nuro"
+            },
+            {
+                "guid": "{1777cdf0-b2c4-5a63-a204-eb60f349ea7c}",
+                "hidden": false,
+                "name": "Alpine",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            }
+        ]
+    },
+    // Add custom color schemes to this array
+    "schemes": [
+        {
+            "name": "OneDark",
+            "black": "#1e2127",
+            "red": "#e06c75",
+            "green": "#98c379",
+            "yellow": "#d19a66",
+            "blue": "#61afef",
+            "purple": "#c678dd",
+            "cyan": "#56b6c2",
+            "white": "#abb2bf",
+            "brightBlack": "#5c6370",
+            "brightRed": "#e06c75",
+            "brightGreen": "#98c379",
+            "brightYellow": "#d19a66",
+            "brightBlue": "#61afef",
+            "brightPurple": "#c678dd",
+            "brightCyan": "#56b6c2",
+            "brightWhite": "#ffffff",
+            "background": "#1e2127",
+            "foreground": "#abb2bf"
+        }
+    ],
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": [
+        { "command": "closePane", "keys": ["ctrl+shift+w"] },
+        { "command": "copy", "keys": ["ctrl+shift+c"] },
+        { "command": "copy", "keys": ["ctrl+shift+c"] },
+        { "command": "newTab", "keys": ["ctrl+shift+t"] },
+        { "command": "paste", "keys": ["ctrl+shift+v"] }
+    ]
+}
