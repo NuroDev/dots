@@ -6,7 +6,7 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 # ========================================================================
 # Run Windows debloater
 # ========================================================================
-Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://github.com/Sycnex/Windows10Debloater/blob/master/Windows10DebloaterGUI.ps1')
+# Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://github.com/Sycnex/Windows10Debloater/blob/master/Windows10DebloaterGUI.ps1')
 
 # ========================================================================
 # Install Scoop
