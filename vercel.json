@@ -1,0 +1,37 @@
+{
+    "version": 2,
+    "alias": [
+        "dots.nuro.dev",
+        "dots.nuro.sh"
+    ],
+    "routes": [
+        {
+            "src": "/",
+            "status": 301,
+            "headers": {
+                "Location": "https://github.com/nurodev/dots"
+            }
+        },
+        {
+            "src": "/macos",
+            "status": 301,
+            "headers": {
+                "Location": "https://raw.githubusercontent.com/nurodev/dots/macos/install.sh"
+            }
+        },
+        {
+            "src": "/windows",
+            "status": 301,
+            "headers": {
+                "Location": "https://raw.githubusercontent.com/nurodev/dots/windows/install.sh"
+            }
+        },
+        {
+            "src": "/wsl",
+            "status": 301,
+            "headers": {
+                "Location": "https://raw.githubusercontent.com/nurodev/dots/wsl/install.sh"
+            }
+        }
+    ]
+}
