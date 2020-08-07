@@ -1,5 +1,5 @@
 ```shell
-curl -sSL https://dots.nuro.dev | sh
+curl -sSL https://dots.nuro.dev/wsl | sh
 ```
 
 <div align='center'>
