@@ -1,9 +1,9 @@
 ```shell
-curl -sSL https://dots.nuro.dev | sh
+curl -sSL https://dots.nuro.dev/macos | sh
 ```
 
 <div align='center'>
-  <a href='https://setup.nuro.sh/'>
+  <a href='https://dots.nuro.sh/'>
     <img width="100%" alt='Install' src='./.github/assets/this_is_fine.gif' />
   </a>
 </div>
