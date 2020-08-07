@@ -56,13 +56,16 @@ echo "
 touch ~/.hushlogin
 
 # Download git config file
-wget https://raw.githubusercontent.com/nurodev/dots/wsl/.gitconfig -o ~/.zshrc
+wget https://raw.githubusercontent.com/nurodev/dots/wsl/.gitconfig -O ~/.gitconfig
 
 # Download `.zshrc` / `.zprofile` / `.aliases` / `.functions`
-wget https://raw.githubusercontent.com/nurodev/dots/wsl/.zshrc -o ~/.zshrc
-wget https://raw.githubusercontent.com/nurodev/dots/wsl/.zprofile -o ~/.zprofile
-wget https://raw.githubusercontent.com/nurodev/dots/wsl/.aliases -o ~/.aliases
-wget https://raw.githubusercontent.com/nurodev/dots/wsl/.functions -o ~/.functions
+if [[ -f "~/.zshrc" ]]; then
+    sudo rm -rf ~/.zshrc
+fi
+wget https://raw.githubusercontent.com/nurodev/dots/wsl/.zshrc -O ~/.zshrc
+wget https://raw.githubusercontent.com/nurodev/dots/wsl/.zprofile -O ~/.zprofile
+wget https://raw.githubusercontent.com/nurodev/dots/wsl/.aliases -O ~/.aliases
+wget https://raw.githubusercontent.com/nurodev/dots/wsl/.functions -O ~/.functions
 
 # Install ZSH `Starship` prompt
 curl -fsSL https://starship.rs/install.sh | bash
