@@ -52,6 +52,9 @@ echo "
 ╚══════════════════════════════════════════════╝
 "
 
+# Add hush login file
+touch ~/.hushlogin
+
 # Download `.zshrc` / `.zprofile` / `.aliases` / `.functions`
 wget https://raw.githubusercontent.com/NuroDev/dots/linux/.zshrc -o ~/.zshrc
 wget https://raw.githubusercontent.com/NuroDev/dots/linux/.zprofile -o ~/.zprofile
@@ -69,6 +72,11 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# Remove unused bash files
+rm -rf ~/.bashrc
+rm -rf ~/.bash_logout
+rm -rf ~/.bash_history
 
 echo "
 ╔══════════════════════════════════════════════╗
