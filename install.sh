@@ -19,120 +19,74 @@ echo "
 
 echo "
 ╔══════════════════════════════════════════════╗
-║   Installing Homebrew 🍺                     ║
+║   Update ⬆️                                  ║
 ╚══════════════════════════════════════════════╝
 "
-
-# Install Homebrew
-if test ! $(which brew); then
-echo "
-╔══════════════════════════════════════════════╗
-║   Installing Xcode 🔨                        ║
-╚══════════════════════════════════════════════╝
-"
-xcode-select --install
+sudo apt-get update -y
 
 echo "
 ╔══════════════════════════════════════════════╗
-║   Installing Homebrew 🍺                     ║
+║   Upgrade ⬆️                                 ║
 ╚══════════════════════════════════════════════╝
 "
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-else
-echo "
-╔══════════════════════════════════════════════╗
-║   Updating Homebrew ⬆️                        ║
-╚══════════════════════════════════════════════╝
-"
-brew update
-brew upgrade
-fi
-
-function install {
-  cmd=$1
-  shift
-  for pkg in $@;
-  do
-    exec="$cmd $pkg"
-    echo "Execute: $exec"
-    if ${exec} ; then
-      echo "Installed $pkg"
-    else
-      echo "Failed to execute: $exec"
-    fi
-  done
-}
-export -f install
+sudo apt-get upgrade
+sudo apt-get update -y
 
 echo "
 ╔══════════════════════════════════════════════╗
-║   Installing Packages ✨                     ║
+║   Install ZSH ⚡                             ║
 ╚══════════════════════════════════════════════╝
 "
-curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/brew.sh | sh
-curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/cargo.sh | sh
-curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/editor.sh | sh
-curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/fonts.sh | sh
-curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/mas.sh | sh
-curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/npm.sh | sh
+sudo apt-get install zsh -y
 
 echo "
 ╔══════════════════════════════════════════════╗
-║   Configuring workspace 🖥️                    ║
+║   Install Oh My ZSH 🚀                       ║
 ╚══════════════════════════════════════════════╝
 "
-curl -sSL https://raw.githubusercontent.com/nurodev/dots/master/scripts/workspace.sh | sh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "
 ╔══════════════════════════════════════════════╗
-║   Cleaning up 🗑                              ║
+║   Configuring ZSH 🔧                         ║
 ╚══════════════════════════════════════════════╝
 "
-brew cleanup
-brew cask cleanup
-npm prune -g
+
+# Download `.zshrc` / `.zprofile` / `.aliases` / `.functions`
+wget https://raw.githubusercontent.com/NuroDev/dots/linux/.zshrc -o ~/.zshrc
+wget https://raw.githubusercontent.com/NuroDev/dots/linux/.zprofile -o ~/.zprofile
+wget https://raw.githubusercontent.com/NuroDev/dots/linux/.aliases -o ~/.aliases
+wget https://raw.githubusercontent.com/NuroDev/dots/linux/.functions -o ~/.functions
+
+# Install ZSH `Starship` prompt
+curl -fsSL https://starship.rs/install.sh | bash
+
+# Install ZSH `spaceship` theme
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+
+# Install ZSH plugins (`zsh-autosuggestions`, `zsh-completions`, `zsh-syntax-highlighting`)
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+echo "
+╔══════════════════════════════════════════════╗
+║   Install NVM (Node.js) 📦                   ║
+╚══════════════════════════════════════════════╝
+"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+nvm install node
+
+echo "
+╔══════════════════════════════════════════════╗
+║   Install Rust 🦀                            ║
+╚══════════════════════════════════════════════╝
+"
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 echo "
 ╔══════════════════════════════════════════════╗
 ║                   Done ✅                    ║
-╚══════════════════════════════════════════════╝
-"
-
-echo "
-╔══════════════════════════════════════════════╗
-║                                              ║
-║   Login 🔒                                   ║
-║    - 1Password                               ║
-║    - Microsoft Edge                          ║
-║    - Spark                                   ║
-║    - Spotify                                 ║
-║    - Slack                                   ║
-║    - Discord                                 ║
-║    - Telegram                                ║
-║    - Sketch                                  ║
-║    - Figma                                   ║
-║    - Notion                                  ║
-║    - Ledger Live                             ║
-║    - Linear                                  ║
-║    - GitHub                                  ║
-║    - GitKraken                               ║
-║    - Zeit Now                                ║
-║    - GOG Galaxy                              ║
-║                                              ║
-╚══════════════════════════════════════════════╝
-"
-
-echo "
-╔══════════════════════════════════════════════╗
-║                                              ║
-║   Configure 🔨                               ║
-║    - Microsoft Edge                          ║
-║    - iTerm2                                  ║
-║    - Visual Studio Code                      ║
-║    - Gitkraken                               ║
-║    - Docker                                  ║
-║    - Viscocity                               ║
-║    - Dato                                    ║
-║                                              ║
 ╚══════════════════════════════════════════════╝
 "

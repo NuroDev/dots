@@ -14,9 +14,6 @@ autoload -U compinit && compinit
 # SSH Path
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-# LibFFI fix
-export PKG_CONFIG_PATH='/usr/local/opt/libffi/lib/pkgconfig'
-
 # Default editor
 export EDITOR="code"
 
@@ -51,6 +48,10 @@ source ~/.functions
 
 # Aliases
 source ~/.aliases
+
+# NVM (Node.js)
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # Oh my ZSH
 source $ZSH/oh-my-zsh.sh
