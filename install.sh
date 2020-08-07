@@ -55,11 +55,14 @@ echo "
 # Add hush login file
 touch ~/.hushlogin
 
+# Download git config file
+wget https://raw.githubusercontent.com/nurodev/dots/wsl/.gitconfig -o ~/.zshrc
+
 # Download `.zshrc` / `.zprofile` / `.aliases` / `.functions`
-wget https://raw.githubusercontent.com/NuroDev/dots/linux/.zshrc -o ~/.zshrc
-wget https://raw.githubusercontent.com/NuroDev/dots/linux/.zprofile -o ~/.zprofile
-wget https://raw.githubusercontent.com/NuroDev/dots/linux/.aliases -o ~/.aliases
-wget https://raw.githubusercontent.com/NuroDev/dots/linux/.functions -o ~/.functions
+wget https://raw.githubusercontent.com/nurodev/dots/wsl/.zshrc -o ~/.zshrc
+wget https://raw.githubusercontent.com/nurodev/dots/wsl/.zprofile -o ~/.zprofile
+wget https://raw.githubusercontent.com/nurodev/dots/wsl/.aliases -o ~/.aliases
+wget https://raw.githubusercontent.com/nurodev/dots/wsl/.functions -o ~/.functions
 
 # Install ZSH `Starship` prompt
 curl -fsSL https://starship.rs/install.sh | bash
