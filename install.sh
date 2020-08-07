@@ -60,6 +60,9 @@ echo "
 ╚══════════════════════════════════════════════╝
 "
 
+# Set ZSH as default shell
+chsh -s $(which zsh)
+
 # Add hush login file
 touch ~/.hushlogin
 
