@@ -4,6 +4,13 @@
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 
 # ========================================================================
+# Drive letters
+# ========================================================================
+$DEV_DRIVE="D:"
+$GAMES_DRIVE="G:"
+$MISC_DRIVE="M:"
+
+# ========================================================================
 # Run Windows debloater
 # ========================================================================
 # Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://github.com/Sycnex/Windows10Debloater/blob/master/Windows10DebloaterGUI.ps1')
@@ -11,7 +18,7 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 # ========================================================================
 # Install Scoop
 # ========================================================================
-$env:SCOOP='G:\Apps\scoop' # Change to custom install path
+$env:SCOOP=$MISC_DRIVE + '\apps\'
 [Environment]::SetEnvironmentVariable('SCOOP', $env:SCOOP, 'User')
 Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
 
@@ -24,13 +31,6 @@ scoop install youtube-dl
 # ========================================================================
 # Install packages using `winget`
 # ========================================================================
-
-# ========================================================================
-# Drive letters
-# ========================================================================
-$DEV_DRIVE="D:"
-$GAMES_DRIVE="G:"
-$MISC_DRIVE="M:"
 
 # ========================================================================
 # Apps
