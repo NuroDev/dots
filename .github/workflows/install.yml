@@ -6,11 +6,11 @@ on:
 
 jobs:
   install:
-    runs-on: macos-latest
+    runs-on: windows-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install
+        shell: pwsh
         run: |
-          chmod +x ./install.sh
-          ./install.sh
+          ./install.ps1
