@@ -23,3 +23,30 @@ whereami() {
   "$(grep -Eo '"region":.*?[^\\],' <<< "$RESP" | sed 's/^.*: "//;s/",//')" \
    "$(grep -Eo '"country":.*?[^\\],' <<< "$RESP" | sed 's/^.*: "//;s/",//')"; 
 } || echo "lost - somewhere off the shoulder of Orion.";
+
+# ================================
+# Source: mathiasbynens/dotfiles
+# https://github.com/mathiasbynens/dotfiles/blob/main/.functions
+# ================================
+
+# Determine size of a file or total size of a directory
+function fs() {
+	if du -b /dev/null > /dev/null 2>&1; then
+		local arg=-sbh;
+	else
+		local arg=-sh;
+	fi
+	if [[ -n "$@" ]]; then
+		du $arg -- "$@";
+	else
+		du $arg .[^.]* ./*;
+	fi;
+}
+
+# `tre` is a shorthand for `tree` with hidden files and color enabled, ignoring
+# the `.git` directory, listing directories first. The output gets piped into
+# `less` with options to preserve color and line numbers, unless the output is
+# small enough for one screen.
+function tre() {
+  tree -aC -I '.git|target|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
+}
