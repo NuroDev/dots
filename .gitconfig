@@ -1,4 +1,5 @@
 [user]
+	email = me@nuro.dev
 	name = N U R O ™
 [github]
   	user = nurodev
@@ -19,3 +20,8 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[url "https://github.com/"]
+	insteadOf = github:
+[url "https://github.com/"]
+	insteadOf = gh:
+
