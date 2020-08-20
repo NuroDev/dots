@@ -54,3 +54,6 @@ source ~/.aliases
 
 # Oh my ZSH
 source $ZSH/oh-my-zsh.sh
+
+# Fet (Launch prompt)
+~/.fet

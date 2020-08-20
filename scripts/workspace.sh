@@ -32,6 +32,7 @@ fi
 rm -rf ~/.zshrc
 wget https://raw.githubusercontent.com/nurodev/dots/master/.zshrc -O ~/.zshrc
 wget https://raw.githubusercontent.com/nurodev/dots/master/.aliases -O ~/.aliases
+wget https://raw.githubusercontent.com/nurodev/dots/master/.fet -O ~/.fet
 wget https://raw.githubusercontent.com/nurodev/dots/master/.functions -O ~/.functions
 
 echo "
