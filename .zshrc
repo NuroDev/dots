@@ -55,3 +55,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # Oh my ZSH
 source $ZSH/oh-my-zsh.sh
+
+# Fet (Launch prompt)
+~/.fet

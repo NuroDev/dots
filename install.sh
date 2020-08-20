@@ -76,6 +76,7 @@ fi
 wget https://raw.githubusercontent.com/nurodev/dots/wsl/.zshrc -O ~/.zshrc
 wget https://raw.githubusercontent.com/nurodev/dots/wsl/.zprofile -O ~/.zprofile
 wget https://raw.githubusercontent.com/nurodev/dots/wsl/.aliases -O ~/.aliases
+wget https://raw.githubusercontent.com/nurodev/dots/wsl/.fet -O ~/.fet
 wget https://raw.githubusercontent.com/nurodev/dots/wsl/.functions -O ~/.functions
 
 # Install ZSH `Starship` prompt
