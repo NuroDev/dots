@@ -30,10 +30,10 @@ if test ! $(which zsh); then
 fi
 
 rm -rf ~/.zshrc
-wget https://raw.githubusercontent.com/nurodev/dots/master/.zshrc -O ~/.zshrc
-wget https://raw.githubusercontent.com/nurodev/dots/master/.aliases -O ~/.aliases
-wget https://raw.githubusercontent.com/nurodev/dots/master/.fet -O ~/.fet
-wget https://raw.githubusercontent.com/nurodev/dots/master/.functions -O ~/.functions
+wget https://raw.githubusercontent.com/nurodev/dots/macos/.zshrc -O ~/.zshrc
+wget https://raw.githubusercontent.com/nurodev/dots/macos/.aliases -O ~/.aliases
+wget https://raw.githubusercontent.com/nurodev/dots/macos/.fet -O ~/.fet
+wget https://raw.githubusercontent.com/nurodev/dots/macos/.functions -O ~/.functions
 
 echo "
 ╔══════════════════════════════════════════════╗
@@ -41,14 +41,14 @@ echo "
 ╚══════════════════════════════════════════════╝
 "
 rm -rf ~/.gitconfig
-wget https://raw.githubusercontent.com/nurodev/dots/master/.gitconfig -O ~/.gitconfig
+wget https://raw.githubusercontent.com/nurodev/dots/macos/.gitconfig -O ~/.gitconfig
 
 echo "
 ╔══════════════════════════════════════════════╗
 ║   Configuring Editor 🔧                      ║
 ╚══════════════════════════════════════════════╝
 "
-wget https://raw.githubusercontent.com/nurodev/dots/master/.vscode/settings.json -O $HOME/Library/Application Support/Code/User/settings.json
+wget https://raw.githubusercontent.com/nurodev/dots/macos/.vscode/settings.json -O $HOME/Library/Application Support/Code/User/settings.json
 
 echo "
 ╔══════════════════════════════════════════════╗
@@ -155,23 +155,23 @@ echo "
 ║   Configuring iTerm 🌈                       ║
 ╚══════════════════════════════════════════════╝
 "🖼
-wget https://github.com/nurodev/dots/blob/master/.iterm/colors.itermcolors -i ~/Desktop/colors.itermcolors
-wget https://github.com/nurodev/dots/blob/master/.iterm/profile.json -i ~/Desktop/profile.json
+wget https://github.com/nurodev/dots/blob/macos/.iterm/colors.itermcolors -i ~/Desktop/colors.itermcolors
+wget https://github.com/nurodev/dots/blob/macos/.iterm/profile.json -i ~/Desktop/profile.json
 
 echo "
 ╔══════════════════════════════════════════════╗
 ║   Downloading icons 💎                       ║
 ╚══════════════════════════════════════════════╝
 "
-wget https://github.com/nurodev/dots/blob/master/assets/icons/iTerm2.icns?raw=true -i ~/Pictures/icons/iTerm.icns
-wget https://github.com/nurodev/dots/blob/master/assets/icons/notion.icns?raw=true -i ~/Pictures/icons/Notion.icns
+wget https://github.com/nurodev/dots/blob/macos/assets/icons/iTerm2.icns?raw=true -i ~/Pictures/icons/iTerm.icns
+wget https://github.com/nurodev/dots/blob/macos/assets/icons/notion.icns?raw=true -i ~/Pictures/icons/Notion.icns
 
 echo "
 ╔══════════════════════════════════════════════╗
 ║   Downloading Screensavers 🖼                ║
 ╚══════════════════════════════════════════════╝
 "
-wget https://github.com/nurodev/dots/blob/master/assets/screensavers/Aerial.saver?raw=true -i ~/Pictures/screensavers/Aerial.saver
+wget https://github.com/nurodev/dots/blob/macos/assets/screensavers/Aerial.saver?raw=true -i ~/Pictures/screensavers/Aerial.saver
 open ~/Pictures/screensavers/Aerial.saver
-wget https://github.com/nurodev/dots/blob/master/assets/screensavers/Brooklyn.saver?raw=true -i ~/Pictures/screensavers/Brooklyn.saver
+wget https://github.com/nurodev/dots/blob/macos/assets/screensavers/Brooklyn.saver?raw=true -i ~/Pictures/screensavers/Brooklyn.saver
 open ~/Pictures/screensavers/Brooklyn.saver
