@@ -32,7 +32,6 @@ fi
 rm -rf ~/.zshrc
 wget https://raw.githubusercontent.com/nurodev/dots/macos/.zshrc -O ~/.zshrc
 wget https://raw.githubusercontent.com/nurodev/dots/macos/.aliases -O ~/.aliases
-wget https://raw.githubusercontent.com/nurodev/dots/macos/.fet -O ~/.fet
 wget https://raw.githubusercontent.com/nurodev/dots/macos/.functions -O ~/.functions
 
 echo "
