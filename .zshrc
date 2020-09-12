@@ -17,6 +17,9 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # Default editor
 export EDITOR="code"
 
+# Yarn
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
 # Plugins
 plugins=(
     brew
