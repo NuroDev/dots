@@ -51,7 +51,6 @@ export casks=(
   rocket
   slack
   spotify
-  viscosity
   visual-studio-code
   wwdc
 )
