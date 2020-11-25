@@ -31,6 +31,7 @@ export formulas=(
 
 export casks=(
   apple-events
+  beekeeper-studio
   brooklyn
   discord
   docker
