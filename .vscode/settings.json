@@ -1,20 +1,36 @@
-{
-    "breadcrumbs.enabled": false,
-    "editor.detectIndentation": true,
-    "editor.fontFamily": "'Fira Code', 'Roboto Mono', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontLigatures": true,
-    "editor.insertSpaces": false,
-    "editor.renderIndentGuides": false,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "rust-client.channel": "nightly",
-    "rust.rustup": {
-        "toolchain": "nightly-x86_64-apple-darwin",
-        "nightlyToolchain": "nightly-x86_64-apple-darwin"
-    },
-    "terminal.integrated.rendererType": "dom",
-    "window.zoomLevel": -1,
-    "workbench.action.positionPanelRight": true,
-    "workbench.colorTheme": "One Dark Pro",
-    "workbench.startupEditor": "newUntitledFile",
-    "rust-analyzer.highlightingOn": true,
+{   
+	// Breadcrumbs
+	"breadcrumbs.enabled": false,
+
+	// Diff Editor
+	"diffEditor.renderSideBySide": false,
+
+	// Editor
+	"editor.detectIndentation": true,
+	"editor.fontFamily": "'Fira Code', 'Roboto Mono', Menlo, Monaco, 'Courier New', monospace",
+	"editor.insertSpaces": false,
+	"editor.renderIndentGuides": false,
+	
+	// JavaScript
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+
+	// Rust
+	"rust-client.channel": "nightly",
+	"rust.rustup": {
+		"toolchain": "nightly-x86_64-apple-darwin",
+		"nightlyToolchain": "nightly-x86_64-apple-darwin"
+	},
+	"rust-analyzer.highlightingOn": true,
+
+	// Workbench
+	"workbench.action.positionPanelRight": true,
+	"workbench.startupEditor": "newUntitledFile",
+	"workbench.activityBar.visible": true,
+	"workbench.statusBar.visible": true,
+	"workbench.colorTheme": "GitHub Dark Classic",
+	"explorer.confirmDragAndDrop": false,
+	"window.zoomLevel": -1,
 }
