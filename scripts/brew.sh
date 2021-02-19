@@ -7,7 +7,6 @@ export formulas=(
   docker-compose
   fd
   ffmpeg
-  ffsend
   gifski
   git
   hexyl
