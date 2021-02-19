@@ -5,7 +5,6 @@ export formulas=(
   cmake
   deno
   docker-compose
-  fd
   ffmpeg
   gifski
   git
@@ -30,8 +29,6 @@ export formulas=(
 )
 
 export casks=(
-  apple-events
-  beekeeper-studio
   brooklyn
   discord
   docker
