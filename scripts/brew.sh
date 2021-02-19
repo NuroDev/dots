@@ -30,6 +30,7 @@ export formulas=(
 
 export casks=(
   brooklyn
+  dbngin
   discord
   docker
   figma
@@ -44,9 +45,11 @@ export casks=(
   qlmarkdown
   qlstephen
   quicklook-json
+  raycast
   rocket
   slack
   spotify
+  tableplus
   tower
   visual-studio-code
   wwdc
