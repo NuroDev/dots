@@ -163,7 +163,6 @@ echo "
 ║   Downloading icons 💎                       ║
 ╚══════════════════════════════════════════════╝
 "
-wget https://github.com/nurodev/dots/blob/macos/assets/icons/iTerm2.icns?raw=true -i ~/Pictures/icons/iTerm.icns
 wget https://github.com/nurodev/dots/blob/macos/assets/icons/notion.icns?raw=true -i ~/Pictures/icons/Notion.icns
 
 echo "
