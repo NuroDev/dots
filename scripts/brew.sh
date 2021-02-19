@@ -70,4 +70,4 @@ echo "
 "
 brew tap caskroom/versions
 brew cask info ${casks[@]}
-install 'brew cask install' ${casks[@]}
+install 'brew install --cask' ${casks[@]}
