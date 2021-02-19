@@ -36,7 +36,6 @@ export casks=(
   discord
   docker
   figma
-  gitkraken
   gog-galaxy
   iterm2
   ledger-live
@@ -52,6 +51,7 @@ export casks=(
   rocket
   slack
   spotify
+  tower
   visual-studio-code
   wwdc
 )
