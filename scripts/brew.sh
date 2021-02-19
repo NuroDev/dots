@@ -16,6 +16,7 @@ export formulas=(
   node
   premake
   rustup-init
+  sampler
   ssh-copy-id
   starship
   tokei

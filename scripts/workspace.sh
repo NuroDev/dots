@@ -33,6 +33,7 @@ rm -rf ~/.zshrc
 wget https://raw.githubusercontent.com/nurodev/dots/macos/.zshrc -O ~/.zshrc
 wget https://raw.githubusercontent.com/nurodev/dots/macos/.aliases -O ~/.aliases
 wget https://raw.githubusercontent.com/nurodev/dots/macos/.functions -O ~/.functions
+wget https://raw.githubusercontent.com/nurodev/dots/macos/.sampler.yml -O ~/.sampler.yml
 
 echo "
 ╔══════════════════════════════════════════════╗

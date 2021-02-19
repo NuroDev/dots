@@ -21,6 +21,6 @@ alias n=node
 alias neolol='clear && neofetch | lolcat'
 alias prune_ds_store='find . -name ".DS_Store" -depth -exec rm {} \;'
 alias reload="source ~/.zshrc"
-alias stats='sampler -c ~/.config/sampler.yml'
+alias stats='sampler -c ~/.sampler.yml'
 alias ubuntu='docker run --rm --name ubuntu -it ubuntu /bin/bash'
 alias x="exit"
