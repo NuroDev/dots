@@ -2,8 +2,7 @@
 
 export npms=(
   fast-cli
-  is-online-cli 
-  is-reachable-cli
+  is-online-cli
   is-up-cli
   lock-cli
   npm
@@ -11,6 +10,7 @@ export npms=(
   serve
   speed-test
   yarn
+  vdx
 )
 
 echo "
