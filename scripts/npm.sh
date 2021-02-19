@@ -1,15 +1,12 @@
 #!/bin/bash
 
 export npms=(
-  @vue/cli
-  boxen-cli
   fast-cli
   is-online-cli 
   is-reachable-cli
   is-up-cli
   lock-cli
   npm
-  prettier
   public-ip-cli
   serve
   speed-test
