@@ -6,13 +6,13 @@ export formulas=(
   deno
   docker-compose
   ffmpeg
+  fnm
   gifski
   git
   hexyl
   imagemagick
   m-cli
   mas
-  node
   premake
   rustup-init
   sampler

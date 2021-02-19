@@ -30,6 +30,7 @@ plugins=(
     docker-compose
     emoji
     extract
+    fnm
     git
     gitignore
     iterm2
@@ -45,6 +46,9 @@ plugins=(
     zsh-completions
     zsh-syntax-highlighting
 )
+
+# FNM (Fast Node Manager)
+eval "$(fnm env)"
 
 # Functions
 source ~/.functions
