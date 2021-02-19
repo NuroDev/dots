@@ -11,6 +11,7 @@ export npms=(
   speed-test
   yarn
   vdx
+  vercel
 )
 
 echo "

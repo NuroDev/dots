@@ -39,7 +39,6 @@ export casks=(
   linear-linear
   microsoft-edge
   notion
-  now
   qlcolorcode
   qlimagesize
   qlmarkdown
