@@ -71,7 +71,6 @@ echo "
 "
 curl -sSL https://raw.githubusercontent.com/nurodev/dots/macos/scripts/brew.sh | sh
 curl -sSL https://raw.githubusercontent.com/nurodev/dots/macos/scripts/cargo.sh | sh
-curl -sSL https://raw.githubusercontent.com/nurodev/dots/macos/scripts/editor.sh | sh
 curl -sSL https://raw.githubusercontent.com/nurodev/dots/macos/scripts/fonts.sh | sh
 curl -sSL https://raw.githubusercontent.com/nurodev/dots/macos/scripts/mas.sh | sh
 curl -sSL https://raw.githubusercontent.com/nurodev/dots/macos/scripts/npm.sh | sh
