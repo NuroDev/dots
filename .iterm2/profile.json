@@ -25,21 +25,21 @@
     "Alpha Component" : 1,
     "Green Component" : 0.69803923368453979
   },
-  "Link Color" : {
-    "Red Component" : 0.023000000044703484,
-    "Color Space" : "Calibrated",
-    "Blue Component" : 0.67799997329711914,
-    "Alpha Component" : 1,
-    "Green Component" : 0.27000001072883606
-  },
-  "Ansi 0 Color" : {
-    "Red Component" : 0.12941176470588237,
+  "Ansi 3 Color" : {
+    "Red Component" : 1,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.12941176470588237,
+    "Blue Component" : 0.027450980392156862,
     "Alpha Component" : 1,
-    "Green Component" : 0.12941176470588237
+    "Green Component" : 0.75686274509803919
   },
-  "Guid" : "3D8B4FC1-EC0A-42F1-8BCA-524C5EA07BD0",
+  "Ansi 2 Color" : {
+    "Red Component" : 0.29803921568627451,
+    "Color Space" : "sRGB",
+    "Blue Component" : 0.31372549019607843,
+    "Alpha Component" : 1,
+    "Green Component" : 0.68627450980392157
+  },
+  "Right Option Key Sends" : 0,
   "Rows" : 32,
   "Default Bookmark" : "No",
   "Cursor Guide Color" : {
@@ -81,6 +81,7 @@
     "Green Component" : 0.69803923368453979
   },
   "Working Directory" : "\/Users\/meadowcottage",
+  "Use Tab Color" : false,
   "Blinking Cursor" : true,
   "Disable Window Resizing" : true,
   "Sync Title" : false,
@@ -97,9 +98,11 @@
     "Alpha Component" : 1,
     "Green Component" : 0.38823530077934265
   },
-  "Only The Default BG Color Uses Transparency" : false,
+  "Initial Use Transparency" : true,
+  "Only The Default BG Color Uses Transparency" : true,
   "Columns" : 105,
   "Idle Code" : 0,
+  "Hide After Opening" : false,
   "Ansi 13 Color" : {
     "Red Component" : 0.72941176470588232,
     "Color Space" : "sRGB",
@@ -300,10 +303,10 @@
     }
   },
   "Window Type" : 0,
-  "Blur Radius" : 30,
+  "Blur Radius" : 14.734589149746192,
   "Cursor Boost" : 0,
   "Background Image Location" : "",
-  "Blur" : false,
+  "Blur" : true,
   "Badge Color" : {
     "Red Component" : 1,
     "Color Space" : "Calibrated",
@@ -336,6 +339,7 @@
   },
   "Minimum Contrast" : 0,
   "Shortcut" : "",
+  "Open Toolbelt" : false,
   "Cursor Color" : {
     "Red Component" : 0.73333334922790527,
     "Color Space" : "Calibrated",
@@ -343,31 +347,37 @@
     "Alpha Component" : 1,
     "Green Component" : 0.73333334922790527
   },
-  "Transparency" : 0.41980488578680197,
-  "Ansi 1 Color" : {
-    "Red Component" : 0.95686274509803926,
+  "Ansi 0 Color" : {
+    "Red Component" : 0.12941176470588237,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.21176470588235294,
+    "Blue Component" : 0.12941176470588237,
     "Alpha Component" : 1,
-    "Green Component" : 0.2627450980392157
+    "Green Component" : 0.12941176470588237
   },
-  "Horizontal Spacing" : 1,
-  "Ansi 3 Color" : {
-    "Red Component" : 1,
-    "Color Space" : "sRGB",
-    "Blue Component" : 0.027450980392156862,
-    "Alpha Component" : 1,
-    "Green Component" : 0.75686274509803919
-  },
-  "Ansi 2 Color" : {
-    "Red Component" : 0.29803921568627451,
-    "Color Space" : "sRGB",
-    "Blue Component" : 0.31372549019607843,
-    "Alpha Component" : 1,
-    "Green Component" : 0.68627450980392157
-  },
-  "Right Option Key Sends" : 0,
+  "Guid" : "3D8B4FC1-EC0A-42F1-8BCA-524C5EA07BD0",
   "Custom Directory" : "No",
+  "Transparency" : 0.44227276332487309,
+  "Ansi 4 Color" : {
+    "Red Component" : 0.12941176470588237,
+    "Color Space" : "sRGB",
+    "Blue Component" : 0.95294117647058818,
+    "Alpha Component" : 1,
+    "Green Component" : 0.58823529411764708
+  },
+  "Ansi 5 Color" : {
+    "Red Component" : 0.61176470588235299,
+    "Color Space" : "sRGB",
+    "Blue Component" : 0.69019607843137254,
+    "Alpha Component" : 1,
+    "Green Component" : 0.15294117647058825
+  },
+  "Link Color" : {
+    "Red Component" : 0.023000000044703484,
+    "Color Space" : "Calibrated",
+    "Blue Component" : 0.67799997329711914,
+    "Alpha Component" : 1,
+    "Green Component" : 0.27000001072883606
+  },
   "Ansi 7 Color" : {
     "Red Component" : 0.8784313725490196,
     "Color Space" : "sRGB",
@@ -389,18 +399,13 @@
     "Alpha Component" : 1,
     "Green Component" : 0.45098039215686275
   },
-  "Ansi 4 Color" : {
-    "Red Component" : 0.12941176470588237,
+  "Ansi 1 Color" : {
+    "Red Component" : 0.95686274509803926,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.95294117647058818,
+    "Blue Component" : 0.21176470588235294,
     "Alpha Component" : 1,
-    "Green Component" : 0.58823529411764708
+    "Green Component" : 0.2627450980392157
   },
-  "Ansi 5 Color" : {
-    "Red Component" : 0.61176470588235299,
-    "Color Space" : "sRGB",
-    "Blue Component" : 0.69019607843137254,
-    "Alpha Component" : 1,
-    "Green Component" : 0.15294117647058825
-  }
+  "Horizontal Spacing" : 1
 }
+
