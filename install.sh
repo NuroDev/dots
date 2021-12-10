@@ -102,21 +102,18 @@ echo "
 ║                                              ║
 ║   Login 🔒                                   ║
 ║    - 1Password                               ║
-║    - Microsoft Edge                          ║
-║    - Spark                                   ║
-║    - Spotify                                 ║
-║    - Slack                                   ║
 ║    - Discord                                 ║
-║    - Telegram                                ║
-║    - Sketch                                  ║
 ║    - Figma                                   ║
-║    - Notion                                  ║
 ║    - Ledger Live                             ║
 ║    - Linear                                  ║
-║    - GitHub                                  ║
-║    - GitKraken                               ║
-║    - Zeit Now                                ║
-║    - GOG Galaxy                              ║
+║    - Microsoft Edge                          ║
+║    - Notion                                  ║
+║    - Slack                                   ║
+║    - Spark                                   ║
+║    - Spotify                                 ║
+║    - Tower                                   ║
+║    - Vercel                                  ║
+║    - Wireguard                               ║
 ║                                              ║
 ╚══════════════════════════════════════════════╝
 "
@@ -125,13 +122,10 @@ echo "
 ╔══════════════════════════════════════════════╗
 ║                                              ║
 ║   Configure 🔨                               ║
-║    - Microsoft Edge                          ║
 ║    - iTerm2                                  ║
+║    - Microsoft Edge                          ║
+║    - Tower                                   ║
 ║    - Visual Studio Code                      ║
-║    - Gitkraken                               ║
-║    - Docker                                  ║
-║    - Viscocity                               ║
-║    - Dato                                    ║
 ║                                              ║
 ╚══════════════════════════════════════════════╝
 "

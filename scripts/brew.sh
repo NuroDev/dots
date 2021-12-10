@@ -1,24 +1,40 @@
 #!/bin/bash
 
 export formulas=(
+  act
   bat
   cmake
+  colima
   deno
+  docker
   docker-compose
+  dog
+  duf
+  dust
   ffmpeg
   fnm
   gifski
   git
+  go
+  gping
   hexyl
+  httpie
   imagemagick
+  jq
+  lazydocker
+  lsd
   m-cli
   mas
+  nano
+  planetscale/tap/pscale
   premake
   rustup-init
   sampler
+  spaceship
   ssh-copy-id
   starship
   tokei
+  trash
   tree
   wget
   youtube-dl
@@ -32,9 +48,8 @@ export casks=(
   brooklyn
   dbngin
   discord
-  docker
   figma
-  gog-galaxy
+  iina
   iterm2
   ledger-live
   linear-linear
@@ -52,7 +67,6 @@ export casks=(
   tableplus
   tower
   visual-studio-code
-  wwdc
 )
 
 echo "
