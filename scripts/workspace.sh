@@ -29,20 +29,28 @@ if test ! $(which zsh); then
   chsh -s /usr/local/bin/zsh
 fi
 
-rm -rf ~/.zshrc
-wget https://raw.githubusercontent.com/nurodev/dots/macos/.zshrc -O ~/.zshrc
-wget https://raw.githubusercontent.com/nurodev/dots/macos/.aliases -O ~/.aliases
-wget https://raw.githubusercontent.com/nurodev/dots/macos/.functions -O ~/.functions
-wget https://raw.githubusercontent.com/nurodev/dots/macos/.sampler.yml -O ~/.sampler.yml
-git clone https://github.com/raycast/script-commands ~/.config/raycast-scripts
+echo "
+╔══════════════════════════════════════════════╗
+║   Linking 🔗                                 ║
+╚══════════════════════════════════════════════╝
+"
+
+rm ~/.zshrc
+
+sudo ln -s ~/dots/.aliases  ~/.aliases
+sudo ln -s ~/dots/.fet  ~/.fet
+sudo ln -s ~/dots/.functions  ~/.functions
+sudo ln -s ~/dots/.nanorc  ~/.nanorc
+sudo ln -s ~/dots/.zshrc  ~/.zshrc
+sudo ln -s ~/dots/.sampler.yml  ~/.config/sampler.yml
+sudo ln -s ~/dots/.gitconfig  ~/.gitconfig
 
 echo "
 ╔══════════════════════════════════════════════╗
-║   Configuring Git 🔧                         ║
+║   Configuring Raycast 🔧                     ║
 ╚══════════════════════════════════════════════╝
 "
-rm -rf ~/.gitconfig
-wget https://raw.githubusercontent.com/nurodev/dots/macos/.gitconfig -O ~/.gitconfig
+git clone https://github.com/raycast/script-commands ~/.config/raycast-scripts
 
 echo "
 ╔══════════════════════════════════════════════╗
@@ -150,28 +158,3 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 # Set system theme to dark theme
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
-
-echo "
-╔══════════════════════════════════════════════╗
-║   Configuring iTerm 🌈                       ║
-╚══════════════════════════════════════════════╝
-"🖼
-wget https://github.com/nurodev/dots/blob/macos/.iterm/colors.itermcolors -i ~/Desktop/colors.itermcolors
-wget https://github.com/nurodev/dots/blob/macos/.iterm/profile.json -i ~/Desktop/profile.json
-
-echo "
-╔══════════════════════════════════════════════╗
-║   Downloading icons 💎                       ║
-╚══════════════════════════════════════════════╝
-"
-wget https://github.com/nurodev/dots/blob/macos/assets/icons/notion.icns?raw=true -i ~/Pictures/icons/Notion.icns
-
-echo "
-╔══════════════════════════════════════════════╗
-║   Downloading Screensavers 🖼                ║
-╚══════════════════════════════════════════════╝
-"
-wget https://github.com/nurodev/dots/blob/macos/assets/screensavers/Aerial.saver?raw=true -i ~/Pictures/screensavers/Aerial.saver
-open ~/Pictures/screensavers/Aerial.saver
-wget https://github.com/nurodev/dots/blob/macos/assets/screensavers/Brooklyn.saver?raw=true -i ~/Pictures/screensavers/Brooklyn.saver
-open ~/Pictures/screensavers/Brooklyn.saver
