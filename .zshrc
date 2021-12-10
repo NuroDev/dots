@@ -11,12 +11,6 @@ ZSH_THEME="spaceship"
 HIST_STAMPS="dd/mm/yyyy"
 autoload -U compinit && compinit
 
-# SSH Path
-export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# LibFFI fix
-export PKG_CONFIG_PATH='/usr/local/opt/libffi/lib/pkgconfig'
-
 # Default editor
 export EDITOR="code"
 
@@ -36,7 +30,7 @@ plugins=(
     iterm2
     last-working-dir
     npm
-    osx
+    macos
     rust
     transfer
     vscode
@@ -47,8 +41,14 @@ plugins=(
     zsh-syntax-highlighting
 )
 
+# Cargo
+source $HOME/.cargo/env
+
 # FNM (Fast Node Manager)
 eval "$(fnm env)"
+
+# Oh my ZSH
+source $ZSH/oh-my-zsh.sh
 
 # Functions
 source ~/.functions
@@ -56,5 +56,5 @@ source ~/.functions
 # Aliases
 source ~/.aliases
 
-# Oh my ZSH
-source $ZSH/oh-my-zsh.sh
+# fet.sh
+~/.fet
