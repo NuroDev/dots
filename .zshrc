@@ -17,8 +17,7 @@ export EDITOR="code"
 # Plugins
 plugins=(
     brew
-    cargo
-    copydir
+    copypath
     copyfile
     docker
     docker-compose
