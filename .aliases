@@ -1,3 +1,7 @@
+alias ans="ansible"
+alias ansg="ansible-galaxy"
+alias ansp="ansible-playbook"
+alias ansv="ansible-vault"
 alias alpine="docker run --rm --name alpine -it alpine /bin/sh"
 alias b=brew
 alias bi="b install"
