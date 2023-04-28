@@ -57,3 +57,10 @@ source ~/.aliases
 
 # fet.sh
 ~/.fet
+
+# pnpm
+export PNPM_HOME="/Users/nuro/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+# bun completions
+[ -s "/Users/nuro/.bun/_bun" ] && source "/Users/nuro/.bun/_bun"
