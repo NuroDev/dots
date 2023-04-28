@@ -68,3 +68,6 @@ export PATH="$PNPM_HOME:$PATH"
 # Bun
 export BUN_INSTALL="/Users/nuro/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# ni
+export NI_CONFIG_FILE="$HOME/.config/.nirc"
