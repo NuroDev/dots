@@ -64,3 +64,7 @@ export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 # bun completions
 [ -s "/Users/nuro/.bun/_bun" ] && source "/Users/nuro/.bun/_bun"
+
+# Bun
+export BUN_INSTALL="/Users/nuro/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
