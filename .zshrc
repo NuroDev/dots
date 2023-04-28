@@ -17,8 +17,8 @@ export EDITOR="code"
 # Plugins
 plugins=(
     brew
-    copypath
     copyfile
+    copypath
     docker
     docker-compose
     emoji
@@ -28,8 +28,8 @@ plugins=(
     gitignore
     iterm2
     last-working-dir
-    npm
     macos
+    npm
     rust
     transfer
     vscode
